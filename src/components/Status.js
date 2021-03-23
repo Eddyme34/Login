@@ -19,9 +19,11 @@ const Status = () => {
             {status ? (
                 <div>
                     Thanks for logging in.
-                    <button onClick={logout}>Log Out</button>
+                    <div className = 'inputField'>
+                    <button className = 'btn' onClick={logout}>Log Out</button>
+                    </div>
                 </div>
-            ):'Please login below. Reload to complete login process'}
+            ):'Please login below'}
         </div>
     )
 }

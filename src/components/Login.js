@@ -12,20 +12,21 @@ const Login = () => {
       authenticate(email,password)
     }
   return (
-    <div>
+   <div className = "inputField">
+    <div className = "loginForm">
       <form onSubmit = {submit}>
-        <input
+        <input className = 'input'
           value={email}
           onChange={event => getEmail(event.target.value)}
           />
-
-        <input
+        <input className='input'
           value = {password}
           onChange={event => getPassword(event.target.value)}
           />
-          <button type = 'submit'>Login</button>
+          <button className = 'btn'>Login</button>
       </form>
       </div>
+      </div> 
   );
 };
 

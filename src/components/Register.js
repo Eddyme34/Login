@@ -10,20 +10,22 @@ const Signup = () => {
       UserPool.signUp(email, password)
     }
   return (
-    <div>
+    <div className = "inputField">
+    <div className = "loginForm">
       <form onSubmit = {Submit}>
-        <input
+        <input className = 'input'
           value={email}
           onChange={event => createEmail(event.target.value)}//set email in input to new email
           />
 
-        <input
+        <input className = 'input'
           value = {password}
           onChange={event => createPassword(event.target.value)}//set password in input to new password
           />
-          <button type = 'submit'>Sign Up</button> 
+          <button className = 'btn'>Sign Up</button> 
       </form>
-      </div>//clicking 'submit' runs the onSubmit function
+      </div>
+      </div>
   );
 };
 
